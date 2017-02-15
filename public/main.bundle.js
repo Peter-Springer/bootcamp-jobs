@@ -22320,17 +22320,21 @@
 	  _createClass(Form, [{
 	    key: 'submit',
 	    value: function submit() {
-	      console.log('hello');
+	      return console.log('hello');
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
 	          'form',
-	          { onSubmit: this.submit() },
+	          { onSubmit: function onSubmit() {
+	              return _this2.submit();
+	            } },
 	          _react2.default.createElement('input', { placeholder: 'name' }),
 	          _react2.default.createElement('input', { placeholder: 'school' }),
 	          _react2.default.createElement('input', { placeholder: 'job' }),

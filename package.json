@@ -4,7 +4,7 @@
   "description": "List of jobs taken by bootcamp grads",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --content-base",
+    "start": "webpack-dev-server --hot --inline --content-base ./public",
     "build": "webpack",
     "test": "mocha --require test/helpers/setup.js"
   },

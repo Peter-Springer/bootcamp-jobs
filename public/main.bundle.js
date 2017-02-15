@@ -21541,11 +21541,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Yoooo'
-	        ),
 	        _react2.default.createElement(_Form2.default, null)
 	      );
 	    }
@@ -21580,6 +21575,7 @@
 	    storageBucket: "bootcamp-jobs.appspot.com",
 	    messagingSenderId: "684556775396"
 	};
+
 	_firebase2.default.initializeApp(config);
 
 	var auth = _firebase2.default.auth();
@@ -22319,18 +22315,23 @@
 
 	  _createClass(Form, [{
 	    key: 'submit',
-	    value: function submit() {
+	    value: function submit(e) {
+	      e.preventDefault();
 	      console.log('hello');
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
 	          'form',
-	          { onSubmit: this.submit() },
+	          { onSubmit: function onSubmit(e) {
+	              return _this2.submit(e);
+	            } },
 	          _react2.default.createElement('input', { placeholder: 'name' }),
 	          _react2.default.createElement('input', { placeholder: 'school' }),
 	          _react2.default.createElement('input', { placeholder: 'job' }),

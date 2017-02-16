@@ -21536,12 +21536,30 @@
 	  }
 
 	  _createClass(App, [{
+	    key: 'submit',
+	    value: function submit(e) {
+	      e.preventDefault();
+	      var job = {
+	        name: 'hello',
+	        school: 'hello',
+	        job: 'hello',
+	        location: 'hello'
+	      };
+	      _firebase.reference.push(job);
+	      document.getElementById('JobForm').reset();
+	      console.log('hello');
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Form2.default, null)
+	        _react2.default.createElement(_Form2.default, { submit: function submit(e) {
+	            return _this2.submit(e);
+	          } })
 	      );
 	    }
 	  }]);
@@ -22293,6 +22311,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _firebase = __webpack_require__(179);
+
+	var _firebase2 = _interopRequireDefault(_firebase);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22307,35 +22329,22 @@
 	  function Form() {
 	    _classCallCheck(this, Form);
 
-	    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this));
-
-	    _this.state = {};
-	    return _this;
+	    return _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).apply(this, arguments));
 	  }
 
 	  _createClass(Form, [{
-	    key: 'submit',
-	    value: function submit(e) {
-	      e.preventDefault();
-	      console.log('hello');
-	    }
-	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
-
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
 	          'form',
-	          { onSubmit: function onSubmit(e) {
-	              return _this2.submit(e);
-	            } },
-	          _react2.default.createElement('input', { placeholder: 'name' }),
-	          _react2.default.createElement('input', { placeholder: 'school' }),
-	          _react2.default.createElement('input', { placeholder: 'job' }),
-	          _react2.default.createElement('input', { placeholder: 'location' }),
+	          { id: 'JobForm', onSubmit: this.props.submit },
+	          _react2.default.createElement('input', { name: 'name', placeholder: 'name' }),
+	          _react2.default.createElement('input', { name: 'school', placeholder: 'school' }),
+	          _react2.default.createElement('input', { name: 'job', placeholder: 'job' }),
+	          _react2.default.createElement('input', { name: 'location', placeholder: 'location' }),
 	          _react2.default.createElement('input', { type: 'submit' })
 	        )
 	      );

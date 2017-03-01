@@ -2,6 +2,22 @@ body {
   background-color: black;
 }
 
+.all-listings {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listing {
+  color: white;
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+  margin: 10px;
+}
+
 .map-container {
   display: flex;
   justify-content: center;

@@ -32,6 +32,31 @@ input {
 }
 
 .loggedIn-nav {
-  height: 100px;
-  background-color: green;
+  height: 8vh;
+  background-color: #7c807b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button {
+  color: white;
+  font-size: 20px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: black;
+  margin: 10px;
+}
+
+.nav-header {
+  font-size: 30px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+}
+
+span {
+  color: white;
 }

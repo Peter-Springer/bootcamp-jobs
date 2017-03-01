@@ -1,8 +1,36 @@
-#map {
-  width: 700px;
-  height: 500px;
-  border: 1px solid black;
+body {
+  background-color: black;
 }
+
+.all-listings {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.listing {
+  color: white;
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+  margin: 10px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+}
+
+#map {
+  height: 500px;
+  width: 80%;
+  border: 8px solid white;
+  border-radius: 5px;
+ }
 
 form {
   height: 70vh;
@@ -22,11 +50,41 @@ input {
 }
 
 .submit-button {
-  color: white;
+  color: black;
   font-size: 40px;
   border: none;
   border-radius: 10px;
   margin-top: 10px;
   font-family: 'Fira Sans', sans-serif;
+  background-color: white;
+}
+
+.nav {
+  height: 8vh;
+  background-color: #7c807b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button {
+  color: white;
+  font-size: 20px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Fira Sans', sans-serif;
   background-color: black;
+  margin: 10px;
+}
+
+.nav-header {
+  font-size: 30px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+}
+
+span {
+  color: white;
 }

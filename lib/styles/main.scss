@@ -12,8 +12,8 @@ body {
 
 .listing {
   color: white;
-  height: 100px;
-  width: 200px;
+  height: 200px;
+  width: 300px;
   background-color: blue;
   margin: 10px;
 }
@@ -47,16 +47,18 @@ input {
   border-left: none;
   border-right: none;
   font-family: 'Fira Sans', sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .submit-button {
-  color: black;
+  color: white;
   font-size: 40px;
   border: none;
   border-radius: 10px;
   margin-top: 10px;
   font-family: 'Fira Sans', sans-serif;
-  background-color: white;
+  background-color: #7c807b;
 }
 
 .nav {
@@ -83,8 +85,19 @@ input {
   font-size: 30px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
+  color: black;
 }
 
 span {
   color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.user-photo {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }

@@ -42,6 +42,10 @@ body {
   height: 50px;
 }
 
+.text-container {
+  text-transform: capitalize;
+}
+
 .map-container {
   display: flex;
   justify-content: center;

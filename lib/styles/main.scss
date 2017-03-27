@@ -3,6 +3,11 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+h2 {
+  color: white;
+  margin: 10px 0;
+}
+
 .all-listings {
   height: 80vh;
   display: flex;
@@ -61,11 +66,21 @@ body {
  }
 
 form {
-  height: 70vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.form-directions {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
 input {

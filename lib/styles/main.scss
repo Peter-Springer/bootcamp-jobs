@@ -144,3 +144,15 @@ a {
   height: 150px;
   width: 150px;
 }
+
+@media screen and (max-width: 450px) {
+  .nav {
+    flex-direction: column;
+    height: 12vh;
+    padding-top: 10px;
+  }
+  #map {
+    height: 300px;
+    width: 80%;
+   }
+}

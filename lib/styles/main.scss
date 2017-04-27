@@ -146,7 +146,8 @@ a {
 }
 
 @media screen and (max-width: 450px) {
-  .nav {
-    background-color: yellow;
-  }
+  #map {
+    height: 300px;
+    width: 80%;
+   }
 }
